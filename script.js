@@ -121,7 +121,7 @@ onFenixReady(function() {
           if (!clicked){
             foxTreeplay();
            }
-        }, 3000);
+        }, 3500);
 
   document.addEventListener("DOMContentLoaded", function(e){
     //window.onload = function () {
