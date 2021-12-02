@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Fox Tree 320X480</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://hammerjs.github.io/dist/hammer.min.js"></script>
+    <style type="text/css">
+        #container {
+            position: absolute;
+            display: block;
+            margin: auto;
+            width: 320px;
+            height: 480px;
+            box-sizing: border-box;
+            overflow: hidden;
+            z-index: 99;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+
+        .intro-text {
+            position: absolute;
+            top: 38%;
+            left: 30%;
+            z-index: 9999999;
+        }
+
+        .intro-text>.icon {
+            position: absolute;
+            left: 270%;
+        }
+
+        .instruct-img {
+            position: absolute;
+            top: 10%;
+            left: 6%;
+            z-index: 9999999;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="outer">
+        <div id="container">
+            <input id="size" type="hidden" name="size" value="320">
+            <img id="instruct-img" class="instruct-img" width="230" src="320x480/part.png" alt="instruction">
+            <div id="intro" class="intro-text">
+                <img width="20" src="320x480/arrowleft.png" alt="arrow left">
+                <img class="icon" width="20" src="320x480/arrowright.png" alt="arrow right">
+            </div>
+            <a id="cts" target="_blank"></a>
+            <div id="fox_tree_pinchBox"></div>
+            <video width="320" id="top" src="320x480/loop.mp4" preload muted playsinline webkit-playsinline x5-playsinline></video>
+            <video width="320" id="foxTree" preload muted playsinline webkit-playsinline x5-playsinline></video>
+            <div id='muteUnmuteButton'></div>
+        </div>
+    </div>
+    <script type="text/javascript">
+    $('#container').css('opacity', 0);
+</script>
+</body>
+<script src="https://builds.byinspired.com/creativeHelper.js"></script>
+<script src="script.js"></script>
+</html>
