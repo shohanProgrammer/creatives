@@ -1,0 +1,92 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  overflow: hidden;
+  position: relative;
+  touch-action:none;
+} 
+
+ #top{
+    position: absolute;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 999999;
+  } 
+ 
+
+#fox_tree_pinchBox{
+  position: absolute;
+  margin: auto;
+  display: block;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  z-index: 9999999;
+  /* border: 1px solid red; */
+}
+
+#foxTree{
+    position: absolute;
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    z-index: 999;
+}
+
+
+#cts {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  z-index: 9999999;
+  display: block;
+}
+.intro-text{
+   animation: pulse 1s infinite;
+        -webkit-animation: pulse 1s infinite;
+      }
+      @keyframes pulse {
+    from {
+        transform : scale(0.75);
+        opacity   : 0.25;
+    }
+    50% {
+        transform : scale(1);
+        opacity   : 1;
+    }
+    to {
+        transform : scale(0.75);
+        opacity   : 0.25;
+    }
+}
+#muteUnmuteButton.on {
+    background: url(sound-ON.svg) center center no-repeat;
+    background-size: 20px 20px;
+}
+
+#muteUnmuteButton {
+    display: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background: url(sound-OFF.svg) center center no-repeat;
+    background-size: 20px 20px;
+    width: 40px;
+    height: 40px;
+    z-index: 99999999;
+    opacity: 1;
+    transition: left 1s linear, bottom 1s linear, background-size 1s linear, background-size 1s linear;
+}
+
