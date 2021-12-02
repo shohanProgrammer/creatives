@@ -78,6 +78,7 @@ onFenixReady(function() {
       sevenfiveper3 = 0.75 * top.duration;
       if (top.currentTime > sevenfiveper3 && !seventyfive3) {
         seventyfive3 = true;
+        top.style.display = "none";
         cts.style.display = "block";
         box.style.display = "none";
       }
@@ -121,7 +122,7 @@ onFenixReady(function() {
           if (!clicked){
             foxTreeplay();
            }
-        }, 3500);
+        }, 3800);
 
   document.addEventListener("DOMContentLoaded", function(e){
     //window.onload = function () {
